@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color:#007bff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+   color:  #FFD700;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('../image/room.jpeg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.btn {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+/* Rooms Section */
+.rooms {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.rooms h2 {
+    text-align: center;
+    margin-bottom: 50px;
+   color: blue;
+}
+
+.room-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.room {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.room:hover {
+    transform: translateY(-10px);
+}
+
+.room img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.room h3 {
+    margin: 20px 0 10px;
+    font-size: 1.5em;
+}
+
+.room p {
+    font-size: 1.2em;
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.room ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.room ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .room-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+/* Filter Sidebar */
+.filters {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Adjust the width as needed */
+    margin-right: 30px;
+}
+
+.filters h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #007bff; /* Matching header color */
+}
+
+.filters form {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters label {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.filters input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.filters .btn {
+    align-self: flex-start;
+    margin-top: 20px;
+    background-color: #007bff; /* Match the header color */
+    color: #fff;
+}
+
+.filters .btn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Adjust content margin to account for sidebar */
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.room-list {
+    flex: 1;
+}

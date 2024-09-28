@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="css/room.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hotel Booking</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="histroy.html">history</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Our Hotel</h2>
+            <p>Experience luxury and comfort at affordable prices.</p>
+            <a href="#rooms" class="btn">View Rooms & Rates</a>
+        </div>
+    </section>
+
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <h2>Our Rooms</h2>
+            <div class="content">
+                <aside class="filters">
+                    <h3>Filter by:</h3>
+                    <form id="filter-form">
+                        <label>
+                            <input type="checkbox" name="wifi" value="wifi"> Free Wi-Fi
+                        </label>
+                        <label>
+                            <input type="checkbox" name="breakfast" value="breakfast"> Breakfast Included
+                        </label>
+                        <label>
+                            <input type="checkbox" name="view" value="view"> Sea View
+                        </label>
+                        <label>
+                            <input type="checkbox" name="minibar" value="minibar"> Complimentary Minibar
+                        </label>
+                        <label>
+                            <input type="checkbox" name="butler" value="butler"> Private Butler Service
+                        </label>
+                        <button type="submit" class="btn">Apply Filters</button>
+                    </form>
+                </aside>
+                <div class="room-list">
+                    <div class="room">
+                        <img src="image/dubai.jpg" alt="Deluxe Room">
+                        <h3>Deluxe Room</h3>
+                        <p>$150/night</p>
+                        <ul>
+                            <li>King-size bed</li>
+                            <li>Free Wi-Fi</li>
+                            <li>Sea view</li>
+                            <li>Breakfast included</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                    <div class="room">
+                        <img src="image/lp.jpeg" alt="Executive Suite">
+                        <h3>Executive Suite</h3>
+                        <p>$250/night</p>
+                        <ul>
+                            <li>King-size bed</li>
+                            <li>Free Wi-Fi</li>
+                            <li>City view</li>
+                            <li>Complimentary minibar</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                    <div class="room">
+                        <img src="image/poo.jpg" alt="Presidential Suite">
+                        <h3>Presidential Suite</h3>
+                        <p>$500/night</p>
+                        <ul>
+                            <li>King-size bed</li>
+                            <li>Free Wi-Fi</li>
+                            <li>Panoramic view</li>
+                            <li>Private butler service</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                    <div class="room">
+                        <img src="image/bol.jpeg" alt="Beach Suite">
+                        <h3>Beach Suite</h3>
+                        <p>$300/night</p>
+                        <ul>
+                            <li>Double bed</li>
+                            <li>Free Wi-Fi</li>
+                            <li>Beach view</li>
+                            <li>Breakfast and DJ</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                    <div class="room">
+                        <img src="image/top.jpeg" alt="Topfloor Suite">
+                        <h3>Topfloor Suite</h3>
+                        <p>$800/night</p>
+                        <ul>
+                            <li>King-size bed</li>
+                            <li>Free Wi-Fi and free car parking</li>
+                            <li>City view</li>
+                            <li>Breakfast and bar</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Hotel Booking. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="room.js"></script>
+</body>
+</html>

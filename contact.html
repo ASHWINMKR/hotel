@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel booking</title>
+    <link rel="stylesheet" href="css/contact.css"> <!-- Optional: Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <a href="index.html" class="rt">Home</a>
+    </header>
+    <main>
+        <div class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p>Email: ashwin123@example.com</p>
+            <p>Phone: +91(1234567890)</p>
+            <p>Address: kahe collage coimbatore</p>
+        </div>
+        <section>
+            <h2>Contact Form</h2>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="4b5afca5-6d9f-4b59-acdd-f06e60070b89">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="contact.js"></script> <!-- Optional: Link to your JavaScript file -->
+</body>
+</html>

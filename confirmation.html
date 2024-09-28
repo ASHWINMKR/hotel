@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+</head>
+<body>
+    <style>
+        .confirmation-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkmark-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+
+.checkmark-circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    animation: circle 0.6s ease-in-out;
+}
+
+.checkmark-stem {
+    position: absolute;
+    width: 15px;
+    height: 45px;
+    background-color: #fff;
+    top: 35px;
+    left: 35px;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transform-origin: left bottom;
+    animation: stem 0.3s ease-in-out 0.6s forwards;
+    opacity: 0;
+}
+
+.checkmark-kick {
+    position: absolute;
+    width: 15px;
+    height: 25px;
+    background-color: #fff;
+    top: 60px;
+    left: 35px;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+    animation: kick 0.3s ease-in-out 0.9s forwards;
+    opacity: 0;
+}
+
+@keyframes circle {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes stem {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+    100% {
+        opacity: 1;
+        height: 45px;
+    }
+}
+
+@keyframes kick {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 15px;
+    }
+}
+
+h3 {
+    margin: 0;
+    color: #4CAF50;
+    font-size: 24px;
+}
+
+p {
+    margin: 10px 0 20px;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #45a049;
+}
+
+    </style>
+    <main>
+        <div class="confirmation-container">
+            <div class="checkmark-container">
+                <div class="checkmark-circle"></div>
+                <div class="checkmark-stem"></div>
+                <div class="checkmark-kick"></div>
+            </div>
+            <h3>Your booking has been confirmed!</h3>
+            <p>Thank you for booking with us. We look forward to your stay.</p>
+            <a href="index.html">Return to Home</a>
+        </div>
+    </main>
+    
+    <!-- Audio for success sound -->
+    <audio id="successSound" src="audio/success.mp3" preload="auto"></audio>
+    
+    <!-- JavaScript to play sound after animation -->
+    <script>
+        document.querySelector('.checkmark-container').addEventListener('animationend', function() {
+            // Play the sound when the animation ends
+            document.getElementById('successSound').play();
+        });
+    </script>
+</body>
+</html>
